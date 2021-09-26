@@ -17,18 +17,28 @@
   flex: 1;
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
 .toolbar img {
+  flex-direction:column;
   margin: 0 16px;
   height: 30px;
   width: 150px;
+  align-items: center;
+  justify-content: center;
 }
 
 .toolbar #twitter-logo {
+  display: flex;
   height: 40px;
   margin: 0 8px;
-  justify-content: center;
   right: 0px;
-  position: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .toolbar #youtube-logo {
