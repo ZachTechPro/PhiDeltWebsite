@@ -6,26 +6,49 @@
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #1976d2;
-  color: white;
+  background-color: #2e4053;
+  color: #d5d8dc;
   font-weight: 600;
 }
 
+//.spacer {
+//  flex: 1;
+//}
+
 .toolbar img {
+  display: flex;
+  align-items: flex-end;
   margin: 0 16px;
 }
 
 .toolbar #twitter-logo {
   height: 40px;
   margin: 0 8px;
+  justify-content: center;
+  right: 0px;
+  position: center;
 }
 
 .toolbar #youtube-logo {
   height: 40px;
   margin: 0 16px;
+
 }
 
 .toolbar #twitter-logo:hover,
 .toolbar #youtube-logo:hover {
   opacity: 0.8;
+}
+
+svg.material-icons {
+  height: 24px;
+  width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card svg.material-icons path {
+  fill: #888;
 }
