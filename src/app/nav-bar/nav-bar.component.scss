@@ -6,19 +6,21 @@
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #2e4053;
   color: #d5d8dc;
   font-weight: 600;
 }
 
-//.spacer {
-//  flex: 1;
-//}
+
+.spacer {
+  flex: 1;
+}
 
 .toolbar img {
-  display: flex;
-  align-items: flex-end;
   margin: 0 16px;
+  height: 30px;
+  width: 150px;
 }
 
 .toolbar #twitter-logo {
