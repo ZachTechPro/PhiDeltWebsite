@@ -1,35 +1,42 @@
 .toolbar {
   position: absolute;
+  display: flex;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #2e4053;
   color: #d5d8dc;
   font-weight: 600;
+  align-items: center;
 }
 
-
-.spacer {
-  flex: 1;
+.toolbar .logo img{
+  margin: 0 16px;
+  height: 40px;
+  width: 200px;
 }
 
 .socials {
   display: flex;
   align-items: center;
   justify-content: right;
+  flex: 1;
 }
 
-.toolbar img {
-  flex-direction:column;
-  margin: 0 16px;
-  height: 30px;
-  width: 150px;
+.bar-one,
+.bar-two,
+.bar-three {
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  flex: 1;
+  height: 0.25rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
 }
 
 .toolbar #twitter-logo {
@@ -44,7 +51,6 @@
 .toolbar #youtube-logo {
   height: 40px;
   margin: 0 16px;
-
 }
 
 .toolbar #twitter-logo:hover,
@@ -63,4 +69,16 @@ svg.material-icons:not(:last-child) {
 
 .card svg.material-icons path {
   fill: #888;
+}
+
+.toolbar .logo {
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  margin-left: 400px;
+}
+
+.toolbar .burger-menu {
+  justify-content: center;
+  display: flex;
 }
